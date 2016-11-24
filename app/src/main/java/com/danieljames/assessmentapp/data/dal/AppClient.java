@@ -32,7 +32,7 @@ public class AppClient{
 
     }
 
-    private <T>  void getData(Supplier<Call<T>> supplier, final DataCallBack<T> callback){
+    private <T>  void getData(Supplier<Call<T>> supplier, final DataCallBack<T> callback) {
         Call<T> call = supplier.get();
         call.enqueue(new Callback<T>() {
             @Override
@@ -51,6 +51,7 @@ public class AppClient{
 
             }
         });
+
     }
 
 
