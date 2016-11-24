@@ -1,8 +1,12 @@
 package com.danieljames.assessmentapp.domain.model;
 
 
+import com.google.gson.annotations.SerializedName;
+
 public class GithubUser extends Model{
+    @SerializedName("name")
     private String userName;
+    @SerializedName("email")
     private String email;
     private int followers;
     private int following;
